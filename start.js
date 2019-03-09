@@ -72,7 +72,8 @@ client.on('message', (message) => {
 			}
 			else if(lowerCaseMessage.includes("commands")) {
 				message.channel.send("WAAZZZZUPPPP. Here are the current commands I can do: \n" 
-									+ "`:duck:d20 \n" 
+									+ "`:duck:buttslap\n"
+									+ ":duck:d20 \n" 
 									+ "duck \n"
 									+ "legsy \n"
 									+ ":duck:pizza \n"
@@ -82,8 +83,12 @@ client.on('message', (message) => {
 									+ "when does rose like? \n"
 									+ "who does rose like? \n"
 									+ "what is dan allergic to? \n"
+									+ "what does lolce like? \n"
 									+ "what does wei like? \n"
 									+ "yas`");
+			}
+			else if(lowerCaseMessage.includes("buttslap") || lowerCaseMessage.includes("bs")) {
+				message.channel.send("You slapped that butt");
 			}
 			
 		}
@@ -95,7 +100,7 @@ client.on('message', (message) => {
 			message.react("537691796617166878");
 		}
 		if (lowerCaseMessage.includes('quack')){
-			message.channel.send("QUACK MOTHERFUCKER :duck:");
+			message.channel.send("QUACK MOTHERFUCKER! :duck:");
 		}
 		if (lowerCaseMessage.includes('yas')){
 			message.channel.send("queeeeeennnnnnn");
@@ -123,6 +128,9 @@ client.on('message', (message) => {
 		}
 		if (lowerCaseMessage.includes('what does wei like?')){
 			message.channel.send("Hugs <:hug:552341981435789312>");
+		}	
+	if (lowerCaseMessage.includes('what does lolce like?')){
+			message.channel.send("Toast <:hug:552341981435789312>");
 		}		
 	}
 	
